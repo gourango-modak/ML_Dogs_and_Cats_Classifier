@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %} 
+<div class="container  mt-3">
+    <div class="header text-center mb-5">
+        <h1 class="display-4">Cats and Dogs Detection</h1>
+        <p class="lead">Upload your image and get the result</p>
+    </div>
+    <div class="row justify-content-center align-items-start">
+        <div class="col-lg-3  order-md-1 order-2 p-3">
+            <div class="image_style mb-4">
+                <img src="" class="rounded" width="200px" id="image_src">
+            </div>
+            
+            <form action="{% url 'get_image' %}" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="file" class="form-control-file" id="image_data" name="image_data">
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Predict</button>
+            </form>
+        </div>
+        <div class="col-lg-3 order-md-2 order-1 p-3">
+            <h2 class="font-weight-300" style="color: rgb(33, 37, 41); border-bottom: 2px solid rgb(33, 37, 41);">Result</h2>
+            <h2 class="font-weight-300 text-center" style="color: rgb(33, 37, 41); margin-top: 20%; margin-bottom: 10%;">None</h2>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
