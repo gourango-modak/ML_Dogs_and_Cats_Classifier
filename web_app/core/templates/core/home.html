@@ -3,9 +3,9 @@
 
 
 {% block content %} 
-<div class="container  mt-3">
+<div class="container mt-3">
     <div class="header text-center mb-5">
-        <h1 class="display-4">Cats and Dogs Detection</h1>
+        <h1 class="display-4">Cats Vs Dogs Detection</h1>
         <p class="lead">Upload your image and get the result</p>
     </div>
     <div class="row justify-content-center align-items-start">
@@ -14,17 +14,17 @@
                 <img src="" class="rounded" width="200px" id="image_src">
             </div>
             
-            <form action="{% url 'get_image' %}" method="post">
+            <form action="." method="post" enctype="multipart/form-data" id="upload_image">
                 {% csrf_token %}
                 <div class="form-group">
-                    <input type="file" class="form-control-file" id="image_data" name="image_data">
+                    <input type="file" class="form-control-file" id="image_data" name="image">
                 </div>
-                <button type="submit" class="btn btn-primary mt-3">Predict</button>
+                <button type="submit" class="btn btn-primary mt-3" id="predict">Predict</button>
             </form>
         </div>
         <div class="col-lg-3 order-md-2 order-1 p-3">
             <h2 class="font-weight-300" style="color: rgb(33, 37, 41); border-bottom: 2px solid rgb(33, 37, 41);">Result</h2>
-            <h2 class="font-weight-300 text-center" style="color: rgb(33, 37, 41); margin-top: 20%; margin-bottom: 10%;">None</h2>
+            <h2 class="font-weight-300 text-center class_label" style="color: rgb(33, 37, 41); margin-top: 20%; margin-bottom: 10%;">None</h2>
         </div>
     </div>
 </div>

@@ -14,4 +14,22 @@ $(document).ready(function(){
     $("#image_data").change(function() {
         readURL(this);
     });
+    $("#upload_image").submit(function(e) {
+      e.preventDefault();
+      // $("#spinner").html('<i class="fas fa-spinner fa-xs"></i>');
+      var data = new FormData(this);
+      $.ajax({
+        url: "image/",
+        type: 'POST',
+        data: data,
+        contentType: false,
+        processData: false,
+        success: function(result){
+          console.log(result);
+          $(".class_label").html(result);
+        }
+      });
+    
+  
+    });
 });
