@@ -1,8 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from django.conf import settings
-import os
 from .ml import predict
-from .models import PredictImage
 import cv2
 import numpy as np
 import base64

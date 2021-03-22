@@ -4,7 +4,11 @@ https://www.youtube.com/watch?v=V2rWvStauak
 
 https://devcenter.heroku.com/articles/django-app-configuration
 
+https://stackoverflow.com/questions/40503111/display-uploaded-chosen-image-without-saving-it-in-database-in-django
+
 https://stackoverflow.com/questions/5977234/how-can-i-push-a-part-of-my-git-repo-to-heroku
+
+https://stackoverflow.com/questions/49469764/how-to-use-opencv-with-heroku
 
 https://stackoverflow.com/questions/9794413/failed-to-push-some-refs-to-githeroku-com
 
