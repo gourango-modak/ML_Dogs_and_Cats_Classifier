@@ -3,13 +3,16 @@
 
 
 {% block content %} 
-<div class="container mt-3">
+<div class="container mt-3 main_content">
     <div class="header text-center mb-5">
         <h1 class="display-4">Cats Vs Dogs Detection</h1>
         <p class="lead">Upload your image and get the result</p>
     </div>
+    
+    <div class="alert alert-danger mx-auto" style="font-size: 1rem;" role="alert">
+    </div>
     <div class="row justify-content-center align-items-start">
-        <div class="col-lg-3  order-md-1 order-2 p-3">
+        <div class="col-lg-3 col-md-5  order-md-1 order-2 p-3">
             <div class="image_style mb-4">
                 <img src="" class="rounded" width="200px" id="image_src">
             </div>
@@ -22,9 +25,9 @@
                 <button type="submit" class="btn btn-primary mt-3" id="predict">Predict</button>
             </form>
         </div>
-        <div class="col-lg-3 order-md-2 order-1 p-3">
-            <h2 class="font-weight-300" style="color: rgb(33, 37, 41); border-bottom: 2px solid rgb(33, 37, 41);">Result</h2>
-            <h2 class="font-weight-300 text-center class_label" style="color: rgb(33, 37, 41); margin-top: 20%; margin-bottom: 10%;">None</h2>
+        <div class="col-lg-3 col-md-5 order-md-2 order-1 p-3">
+            <h2 class="font-weight-300" style="color: rgb(33, 37, 41); border-bottom: 2px solid rgb(33, 37, 41); font-size: 2rem;">Result</h2>
+            <h2 class="font-weight-300 text-center class_label" style="color: rgb(33, 37, 41); margin-top: 20%; margin-bottom: 10%; font-size: 2rem;">None</h2>
         </div>
     </div>
 </div>

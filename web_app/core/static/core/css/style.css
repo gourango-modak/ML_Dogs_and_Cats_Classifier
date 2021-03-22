@@ -1,0 +1,12 @@
+.spinner_loader {
+    display: none;
+}
+.alert {
+    width: 75%;
+}
+
+@media (max-width: 575.98px) { 
+    .alert {
+        width: 100%;
+    }
+}
