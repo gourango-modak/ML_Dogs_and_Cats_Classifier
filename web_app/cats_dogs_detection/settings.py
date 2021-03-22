@@ -26,7 +26,7 @@ TEM_DIR = BASE_DIR / 'templates'
 SECRET_KEY = '7e@+j9^!@o%5m_l1t_eg8fkfg6z^80gw$=!s=!!^$q&jxx(0wc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
